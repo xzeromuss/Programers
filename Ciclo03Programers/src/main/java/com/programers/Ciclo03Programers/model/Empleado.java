@@ -1,5 +1,4 @@
 package com.programers.Ciclo03Programers.model;
-
 public class Empleado {
     private String nombre;
     private String correo;
