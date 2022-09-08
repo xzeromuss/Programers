@@ -13,17 +13,25 @@ import javax.persistence.*;
 @Data
 @ToString
 @Entity
+@Table(name = "enterprise")
 public class Empresa {
 
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name="id", nullable = false)
-    private Long id;
+    private String id;
 
+    @Column(length = 50, nullable = false)
     private String nombreEmpresa;
+
+    @Column(length = 50, nullable = false)
     private String direccion;
+
+    @Column(length = 50, nullable = false)
     private String telefono;
+
+    @Column(length = 50, nullable = false)
     private String nitEmpresa;
 
 
