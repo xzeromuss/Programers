@@ -5,7 +5,9 @@ import com.programers.Ciclo03Programers.repository.EmpresaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 @Service
 public class EmpresaService {
@@ -27,11 +29,15 @@ public class EmpresaService {
 
     }
 
-    public void consultarTodasEmpresas(){
-
+    public List<Empresa> consultarTodasEmpresas(){
+        List<Empresa> empresaList = new ArrayList<Empresa>();
+        empresaList.addAll(empresaRepository.findAll());
+        return empresaList;
     }
 
-    public void consultarUnaEmpresa(){
-
+    public List<Empresa> consultarUnaEmpresa(){
+        List<Empresa> empresas = new ArrayList<Empresa>();
+        empresas.addAll(empresaRepository.findAll());
+        return empresas;
     }
 }
