@@ -25,7 +25,7 @@ public class MovimientoDineroService {
 
     }
 
-    public List<Empresa> consultarTodosMovimientoDinero(){
+    public List<MovimientoDinero> consultarTodosMovimientoDinero(){
         List<MovimientoDinero> movimientoDineroList = new ArrayList<MovimientoDinero>();
         movimientoDineroList.addAll(movimientoDineroRepository.findAll());
         return movimientoDineroList;

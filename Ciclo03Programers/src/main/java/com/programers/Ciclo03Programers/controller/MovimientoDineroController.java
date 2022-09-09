@@ -14,7 +14,7 @@ public class MovimientoDineroController {
         MovimientoDineroService movimientoDineroService;
 
         @GetMapping("/enterprise")
-        private List<Empresa> consultarTodosMovimientoDinero() {
+        private List<MovimientoDinero> consultarTodosMovimientoDinero() {
             return movimientoDineroService.consultarTodosMovimientoDinero();
         }
 
