@@ -13,7 +13,7 @@ import javax.persistence.*;
 @Data
 @ToString
 @Entity
-@Table(name = "enterprise")
+@Table(name = "Enterprise")
 public class Empresa {
 
 
