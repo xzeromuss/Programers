@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import javax.persistence.Entity;
+import javax.persistence.*;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -14,8 +14,14 @@ import javax.persistence.Entity;
 @Entity
 
 public class MovimientoDinero {
+
+    @Column(length = 50, nullable = false)
     private double montoMovimiento;
+
+    @Column(length = 50, nullable = false)
     private String conceptoMovimiento;
+
+    @Column(length = 50, nullable = false)
     private String usuarioEncargado;
 
 
