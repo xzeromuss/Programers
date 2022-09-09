@@ -13,28 +13,28 @@ public class EmpleadoController {
     @Autowired
     EmpleadoService empleadoService;
 
-    @GetMapping("/enterprise")
+    @GetMapping("/user")
     private List<Empleado> consultarTodosEmpleados() {
         return empleadoService.consultarTodosEmpleados();
     }
 
-    @GetMapping("/enterprise/{id}")
+    @GetMapping("/user/{id}")
     private List<Empleado> consultarUnEmpleado() {
         return empleadoService.consultarUnEmpleado();
     }
 
-    @PostMapping("/enterprise")
+    @PostMapping("/user")
     public void crearEmpleado(@RequestBody Empleado empleado) {
         empleadoService.crearEmpleado(empleado);
     }
 
 
-    @DeleteMapping("/enterprise/{id}")
+    @DeleteMapping("/user/{id}")
     private void eliminarEmpleado(@PathVariable("id") String id) {
         empleadoService.eliminarEmpleado(id);
     }
 
-    @PatchMapping("/enterprise/{id}")
+    @PatchMapping("/user/{id}")
     private void editarEmpleado(@RequestBody Empleado empleado){
         empleadoService.editarEmpleado(empleado);
     }
