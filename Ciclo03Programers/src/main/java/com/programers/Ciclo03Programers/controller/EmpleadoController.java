@@ -30,7 +30,7 @@ public class EmpleadoController {
 
 
     @DeleteMapping("/user/{id}")
-    private void eliminarEmpleado(@PathVariable("id") String id) {
+    private void eliminarEmpleado(@PathVariable("id") Long id) {
         empleadoService.eliminarEmpleado(id);
     }
 

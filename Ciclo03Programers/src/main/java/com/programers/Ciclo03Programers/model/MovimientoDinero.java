@@ -12,7 +12,7 @@ import javax.persistence.*;
 @Data
 @ToString
 @Entity
-
+@Table(name = "movimientos")
 public class MovimientoDinero {
 
     @Column(length = 50, nullable = false)

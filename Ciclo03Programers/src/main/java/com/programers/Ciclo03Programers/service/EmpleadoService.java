@@ -25,8 +25,8 @@ public class EmpleadoService {
 
     }
 
-    public void eliminarEmpleado(String id){
-        empleadoRepository.deleteAllById(id);
+    public void eliminarEmpleado(Long id){
+        empleadoRepository.deleteById(id);
 
     }
 

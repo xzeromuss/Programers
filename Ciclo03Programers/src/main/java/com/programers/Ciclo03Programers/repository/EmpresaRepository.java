@@ -6,5 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface EmpresaRepository extends JpaRepository<Empresa, String> {
-    void deleteAllById(String id);
+
+    void deleteById(Long id);
 }

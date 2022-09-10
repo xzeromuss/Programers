@@ -11,16 +11,16 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@ToString
+
 @Entity
-@Table(name = "Enterprise")
+@Table(name = "enterprises")
 public class Empresa {
 
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name="id", nullable = false)
-    private String id;
+    private Long id;
 
     @Column(length = 50, nullable = false)
     private String nombreEmpresa;

@@ -24,8 +24,8 @@ public class EmpresaService {
 
     }
 
-    public void eliminarEmpresa(String id){
-        empresaRepository.deleteAllById(id);
+    public void eliminarEmpresa(Long id){
+        empresaRepository.deleteById(id);
 
     }
 

@@ -30,7 +30,7 @@ public class EmpresaController {
 
 
     @DeleteMapping("/enterprise/{id}")
-    private void eliminarEmpresa(@PathVariable("id") String id) {
+    private void eliminarEmpresa(@PathVariable("id") Long id) {
         empresaService.eliminarEmpresa(id);
     }
 
