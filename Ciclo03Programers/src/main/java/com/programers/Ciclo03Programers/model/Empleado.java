@@ -10,18 +10,26 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@ToString
 @Entity
 @Table(name = "empleados")
 public class Empleado {
-    private String nombre;
-    private String correo;
-    private String empresaEmpleado;
-    private String rolEmpleado;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name="id", nullable = false)
-    private String id;
+    private long idEmp;
+
+    @Column(length = 50, nullable = false)
+    private String nombre;
+
+    @Column(length = 50, nullable = false)
+    private String correo;
+
+    @Column(length = 50, nullable = false)
+    private String empresaEmpleado;
+
+    @Column(length = 50, nullable = false)
+    private String rolEmpleado;
+
+
 
 }

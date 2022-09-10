@@ -17,11 +17,6 @@ import javax.persistence.*;
 public class Empresa {
 
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name="id", nullable = false)
-    private Long id;
-
     @Column(length = 50, nullable = false)
     private String nombreEmpresa;
 
@@ -31,8 +26,9 @@ public class Empresa {
     @Column(length = 50, nullable = false)
     private String telefono;
 
-    @Column(length = 50, nullable = false)
-    private String nitEmpresa;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long nitEmpresa;
 
 
 

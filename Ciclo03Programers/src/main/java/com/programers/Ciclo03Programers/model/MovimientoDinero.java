@@ -10,10 +10,14 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@ToString
 @Entity
 @Table(name = "movimientos")
 public class MovimientoDinero {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name="id", nullable = false)
+    private Long id;
 
     @Column(length = 50, nullable = false)
     private double montoMovimiento;
@@ -21,8 +25,14 @@ public class MovimientoDinero {
     @Column(length = 50, nullable = false)
     private String conceptoMovimiento;
 
-    @Column(length = 50, nullable = false)
-    private String usuarioEncargado;
+    @ManyToOne
+    @JoinColumn(name = "nitEmpresa",nullable = false)
+    private Empresa empresaMov;
+
+    @ManyToOne
+    @JoinColumn(name = "idEmp",nullable = false)
+    private Empleado empleadoMov;
+
 
 
     public double monto(){
