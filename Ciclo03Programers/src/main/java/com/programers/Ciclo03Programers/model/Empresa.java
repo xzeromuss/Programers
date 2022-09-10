@@ -30,6 +30,14 @@ public class Empresa {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long nitEmpresa;
 
+    @OneToMany
+    @JoinColumn(name = "idEmp", nullable = false)
+    private Empleado empleado;
+
+    @OneToMany
+    @JoinColumn(name = "idMov", nullable = false)
+    private MovimientoDinero movimientoDinero;
+
 
 
         

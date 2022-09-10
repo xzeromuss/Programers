@@ -30,6 +30,14 @@ public class Empleado {
     @Column(length = 50, nullable = false)
     private String rolEmpleado;
 
+    @ManyToOne
+    @JoinColumn(name = "nitEmpresa",nullable = false)
+    private Empresa empresa;
+
+    @ManyToMany
+    @JoinColumn(name = "idMov",nullable = false)
+    private MovimientoDinero movimientoDinero ;
+
 
 
 }
