@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import javax.persistence.*;
+import java.util.List;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -30,13 +31,16 @@ public class Empresa {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long nitEmpresa;
 
-    @OneToMany
-    @JoinColumn(name = "idEmp", nullable = false)
-    private Empleado empleado;
+    @ManyToOne(targetEntity = Empleado.class, fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinColumn(name = "idEmp",nullable = false)
+    private List<Empleado> empresa;
 
-    @OneToMany
-    @JoinColumn(name = "idMov", nullable = false)
-    private MovimientoDinero movimientoDinero;
+
+    @ManyToMany(targetEntity = MovimientoDinero.class, fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinColumn(name = "idMov",nullable = false)
+    private List<MovimientoDinero> movimientoDineroList;
+
+
 
 
 

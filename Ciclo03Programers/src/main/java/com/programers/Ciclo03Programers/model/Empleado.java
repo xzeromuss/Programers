@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import javax.persistence.*;
+import java.util.List;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -30,14 +31,14 @@ public class Empleado {
     @Column(length = 50, nullable = false)
     private String rolEmpleado;
 
-    @ManyToOne
+    @ManyToOne(targetEntity = Empresa.class, fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "nitEmpresa",nullable = false)
-    private Empresa empresa;
+    private List<Empresa> empresa;
 
-    @ManyToMany
+
+    @ManyToMany(targetEntity = MovimientoDinero.class, fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "idMov",nullable = false)
-    private MovimientoDinero movimientoDinero ;
-
+    private List<MovimientoDinero> movimientoDineroList;
 
 
 }
