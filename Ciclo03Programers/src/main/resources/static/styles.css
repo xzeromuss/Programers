@@ -1,0 +1,147 @@
+[0:23 p. m., 26/9/2022] 𝓜𝓲𝓰𝓾𝓮𝓵 𝓪𝓷𝓰𝓮𝓵: <!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/css/styles.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">
+            <img src="https://p.kindpng.com/picc/s/495-4959708_grocery-stores-warehouses-icono-carro-de-compra-hd.png" height="70"/>
+            <h2 class="nombre-empresa">Programers</h2>
+        </a>
+        <nav>
+            <a href="" class="nav-link">Inicio</a>
+            <a href="" class="nav-link">Sobre Nosotros</a>
+            <a href="" class="nav-link">Contacto</a>
+
+        </nav>
+    </header>
+    <section class="Presentacion">
+        <div class="container-primero">
+
+            <div class="imagen-programador"></div>
+            <div class="texto-programador">
+                <img src="https://microsofters.com/wp-content/uploads/2022/05/Programando.webp"height="350" style="margin: 20px;">
+
+                <p class="brush"style="display: flex; align-items: center; font-size: x-large;">En esta pagina web mostraremos el trabajo final de nuestro equipo de trabajo la cual esta conformada por tres integrantes lo cuales son Miguel Angel Cuervo Hernandez, Yeimi Carolina Corredor Ruiz y Jhon Anderson Rave Pineda, Bienvenidos </p>
+
+            </div>
+        </div>
+    </section>
+
+    <figure>
+
+    </figure>
+    <section class="contenedor-principal"  >
+        <section class="contenedor-login">
+            <figure>
+                <img src="https://4.bp.blogspot.com/-jDcqEFr898k/XBAeeuO_B3I/AAAAAAAAAEM/ugCkZsDFoN8_HGj34Mcs6O61GvNDzcKaACLcBGAs/s1600/phpCode.png" height="150">
+            </figure>
+
+            <form action=""class="contenedor-formulario">
+                <input type="text" placeholder="Nombre usuario">
+                <input type="password" placeholder="Contrasena">
+                <button type="submit">ACCEDER</button>
+
+            </form>
+        </section>
+
+    </section>
+
+</body>
+</html>
+[0:23 p. m., 26/9/2022] 𝓜𝓲𝓰𝓾𝓮𝓵 𝓪𝓷𝓰𝓮𝓵: body{
+    background-image: url("https://www.xtrafondos.com/wallpapers/nubes-cerca-de-montanas-10424.jpg");
+    height: 900px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin:0;
+}
+a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+
+    align-items: center;
+}
+
+header{
+    display:flex;
+    height: 70px;
+    background-color:black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.logo{
+    display:flex;
+    align-items: 50px;
+    height: 70px;
+}
+
+.https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJI2Q-a_-0DrQP7L6nyMRfnFf5gXq_1XGKEQ&usqp=CAU img{
+    height: 80px;
+    margin-right:10px;
+    height: 70px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+    display: flex;
+
+}
+
+nav a:hover{
+    color: yellow;
+}
+h1{
+    display:inline-block;
+    position:relative;
+    color:red;
+}
+a.logo{
+    height:70px;
+}
+
+.texto-programador{
+    display: flex;
+
+}
+
+.brush{
+    display: flex;
+    align-items: center;
+    color: black;
+    font-family:"monotype corsiva";
+
+
+}
+
+
+.contenedor-principal{
+    display: flex;
+    justify-content: flex-end;
+    aling-items: center;
+    height: 100%
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-login{
+    background-color: none;
+}
+
+.contenedor-formulario{
+    display: flex;
+    flex-direction: column;
